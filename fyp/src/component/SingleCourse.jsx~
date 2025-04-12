@@ -1,0 +1,35 @@
+// AllClass.jsx
+import { useParams } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
+
+function SingleCourse() {
+    const { id } = useParams(); // Get class ID from the route
+    const [classroom, setClassroom] = useState(null);
+    const [error, setError] = useState(null);
+
+    useEffect(() => {
+        axios.get(`/api/student/classes/${id}`)
+            .then(response => {
+                setClassroom(response.data);
+            })
+            .catch(error => {
+                setError('Class not found or error fetching class.');
+                console.error(error);
+            });
+    }, [id]);
+
+    if (error) return <div>{error}</div>;
+    if (!classroom) return <div>Loading...</div>;
+
+    return (
+        <div>
+            <h2>{classroom.name}</h2>
+            <p>{classroom.description}</p>
+            <img src={classroom.image} alt={classroom.name} width="200" />
+            <p>Created at: {new Date(classroom.created_at).toLocaleString()}</p>
+        </div>
+    );
+}
+
+export default SingleCourse;
