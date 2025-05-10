@@ -12,6 +12,8 @@ import Dashboard from "./component/Dashboard.jsx";
 import Information from "./component/Information.jsx";
 import SessionLog from "./component/SessionLog.jsx";
 import SessionStart from "./component/SessionStart.jsx";
+import UploadVideo from "./component/UploadVideo.jsx"
+
 function App() {
     return(
     <Router>
@@ -30,6 +32,7 @@ function App() {
             <Route path="/class/:session_id/detect" element={<DetectionViewer />} />
             <Route path="/stats/:classid/sessions" element={<Stats />} />
             <Route path="/session/:sessionid" element={<StatsInformation/>} />
+            <Route path="/class/:session_id/uploadVideo" element={<UploadVideo />} />
         </Routes>
         </Layout>
     </Router>

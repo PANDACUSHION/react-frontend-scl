@@ -162,12 +162,12 @@ const SessionLogTable = () => {
                             >
                                 Date/Time {getSortIcon('start_time')}
                             </th>
-                            <th
+                            {/* <th
                                 onClick={() => handleSort('duration_minutes')}
                                 className="text-xs cursor-pointer hover:bg-gray-100"
                             >
                                 Duration {getSortIcon('duration_minutes')}
-                            </th>
+                            </th> */}
                             <th className="text-xs">Status</th>
                             <th className="text-xs text-center">Hand Raising</th>
                             <th className="text-xs text-center">Reading</th>
@@ -205,12 +205,12 @@ const SessionLogTable = () => {
                                                 <span className="text-sm">{formatDate(session.start_time)}</span>
                                             </div>
                                         </td>
-                                        <td className="py-2">
+                                        {/* <td className="py-2">
                                             <div className="flex items-center">
                                                 <FaClock className="mr-1 text-gray-400" size={14} />
                                                 <span>{session.duration_minutes} min</span>
                                             </div>
-                                        </td>
+                                        </td> */}
                                         <td className="py-2">
                                             {session.status === 'Active' ? (
                                                 <div className="badge badge-sm badge-success gap-1">

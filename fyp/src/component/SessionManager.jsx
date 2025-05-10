@@ -115,6 +115,12 @@ const SessionManager = () => {
                             Go to Face Detection
                         </button>
                         <button
+                            onClick={() => window.location.href = `/class/${sessionId}/uploadVideo`}
+                            className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded transition-colors"
+                        >
+                           Upload Video
+                        </button>
+                        <button
                             onClick={handleSessionAction}
                             disabled={processing}
                             className="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded transition-colors"

@@ -93,15 +93,6 @@ function SingleClass() {
                     </div>
 
                     <div className="stats shadow mb-6">
-                        <div className="stat">
-                            <div className="stat-title">Created</div>
-                            <div className="stat-value text-lg">{new Date(classroom.created_at).toLocaleString()}</div>
-                        </div>
-
-                        <div className="stat">
-                            <div className="stat-title">Students</div>
-                            <div className="stat-value text-lg">{classroom.students?.length || 0}</div>
-                        </div>
 
                         {classroom.last_activity && (
                             <div className="stat">
