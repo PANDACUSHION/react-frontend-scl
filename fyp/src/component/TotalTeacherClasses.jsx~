@@ -88,6 +88,7 @@ const TeacherClasses = () => {
                             </figure>
                             <div className="card-body">
                                 <h3 className="card-title text-xl font-bold">{cls.name}</h3>
+                                <div className="badge badge-accent mb-2">{cls.students?.length || 0} Students</div>
                                 <p className="text-gray-600 line-clamp-3">{cls.description}</p>
                                 <div className="card-actions justify-end mt-4">
                                     <Link to={`/admin/${cls.id}`} className="btn btn-primary">

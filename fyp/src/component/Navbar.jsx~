@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from '../context/AuthContext'; // adjust the path if different
 import {
     BookText, LineChart, ClipboardList, PlayCircle, User,
     LogOut, Menu, X, Home, BookPlus, Users, BarChart

@@ -14,7 +14,7 @@ import SessionLog from "./component/SessionLog.jsx";
 import SessionStart from "./component/SessionStart.jsx";
 import UploadVideo from "./component/UploadVideo.jsx"
 import TotalTeacherClasses from "./component/TotalTeacherClasses.jsx";
-import ShowTeachers from "./component/ShowTeachers.jsx";
+
 function App() {
     return(
     <Router>
