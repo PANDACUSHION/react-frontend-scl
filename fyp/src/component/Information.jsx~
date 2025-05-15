@@ -39,7 +39,7 @@ const Dashboard = () => {
         const fetchDashboardData = async () => {
             setLoading(true);
             try {
-                const response = await fetch('/api/dashboard/pages/stats', {
+                const response = await fetch('/api/dashboard/page/stats', {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem('token')}`,
                     },

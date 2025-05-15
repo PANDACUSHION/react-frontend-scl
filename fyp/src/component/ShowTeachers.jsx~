@@ -12,7 +12,7 @@ export default function TeacherSummary() {
             try {
                 const token = localStorage.getItem("token");
 
-                const response = await axios.get("/api/teacher/show-teachers", {
+                const response = await axios.get("/teacher/show-teachers", {
                     headers: {
                         "Authorization": `Bearer ${token}`,
                         "Content-Type": "application/json",

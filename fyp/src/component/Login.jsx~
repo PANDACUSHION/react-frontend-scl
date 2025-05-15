@@ -188,6 +188,7 @@ function Login() {
 
                 if (decoded && decoded.role === 'admin') {
                     window.location.href = '/admin/teachers';
+                    navigate('/admin/teachers');
                 } else {
                     window.location.href = '/dashboard';
                 }

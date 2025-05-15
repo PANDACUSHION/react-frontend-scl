@@ -37,7 +37,7 @@ function App() {
             <Route path="/admin/teachers" element={<ShowTeachers />} />
             <Route path="/admin/teachers/:id" element={<TotalTeacherClasses />} />
             <Route path="/admin/stats" element={<Information />} />
-            <Route path="/admin/:session_id" element={<StatsInformation />} />
+            <Route path="/admin/:classid" element={<Stats />} />
             <Route path="/admin/classes/:teacherid" element={<AllClass />} />
         </Routes>
         </Layout>
