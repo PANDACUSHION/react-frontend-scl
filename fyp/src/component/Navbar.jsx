@@ -87,7 +87,7 @@ const Navbar = () => {
             { path: "/classes", name: "My Classes", icon: <BookPlus size={18} /> },
             { path: "/stats", name: "Statistics", icon: <LineChart size={18} /> },
             { path: "/session-logs", name: "Session Logs", icon: <ClipboardList size={18} /> },
-            { path: "/start-session", name: "Start Session", icon: <PlayCircle size={18} /> }
+            { path: "/start-session", name: "Active sessions", icon: <PlayCircle size={18} /> }
         ],
         admin: [
             { path: "/admin/teachers", name: "View Teachers", icon: <Users size={18} /> },
