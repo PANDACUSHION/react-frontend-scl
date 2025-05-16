@@ -91,7 +91,7 @@ const Navbar = () => {
         ],
         admin: [
             { path: "/admin/teachers", name: "View Teachers", icon: <Users size={18} /> },
-            { path: "/overall-stats", name: "Overall Stats", icon: <BarChart size={18} /> }
+            { path: "/admin/stats", name: "Overall Stats", icon: <BarChart size={18} /> }
         ],
         unregistered: []
     };
@@ -152,13 +152,7 @@ const Navbar = () => {
                                         to="/login"
                                         className="px-4 py-1.5 text-sm text-blue-100 hover:text-white transition-colors"
                                     >
-                                        Login
-                                    </Link>
-                                    <Link
-                                        to="/signup"
-                                        className="px-4 py-1.5 text-sm bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-full hover:from-blue-600 hover:to-indigo-600 transition-all"
-                                    >
-                                        Sign Up
+                                        Login / Regiser
                                     </Link>
                                 </div>
                             ) : (

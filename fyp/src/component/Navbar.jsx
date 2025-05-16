@@ -152,13 +152,7 @@ const Navbar = () => {
                                         to="/login"
                                         className="px-4 py-1.5 text-sm text-blue-100 hover:text-white transition-colors"
                                     >
-                                        Login
-                                    </Link>
-                                    <Link
-                                        to="/signup"
-                                        className="px-4 py-1.5 text-sm bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-full hover:from-blue-600 hover:to-indigo-600 transition-all"
-                                    >
-                                        Sign Up
+                                        Login / Regiser
                                     </Link>
                                 </div>
                             ) : (
@@ -228,13 +222,7 @@ const Navbar = () => {
                                         to="/login"
                                         className="block px-4 py-3 rounded-lg text-blue-100 hover:bg-blue-800/50 transition-colors"
                                     >
-                                        Login
-                                    </Link>
-                                    <Link
-                                        to="/signup"
-                                        className="block px-4 py-3 rounded-lg bg-gradient-to-r from-blue-500 to-indigo-500 text-white text-center hover:from-blue-600 hover:to-indigo-600 transition-all"
-                                    >
-                                        Sign Up
+                                        Login / Register
                                     </Link>
                                 </>
                             ) : (
