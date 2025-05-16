@@ -79,7 +79,7 @@ const TeacherClasses = () => {
                         <div key={cls.id} className="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow duration-300">
                             <figure className="px-4 pt-4">
                                 {cls.image ? (
-                                    <img src={`http://127.0.0.1:3000${cls.image}`} alt={cls.name} className="rounded-xl h-48 w-full object-cover" />
+                                    <img src={` http://127.0.0.1:3000/`+cls.image} alt={cls.name} className="rounded-xl h-48 w-full object-cover" />
                                 ) : (
                                     <div className="bg-gradient-to-r from-primary to-secondary h-48 w-full rounded-xl flex items-center justify-center">
                                         <span className="text-2xl font-bold text-white">{cls.name.charAt(0)}</span>
